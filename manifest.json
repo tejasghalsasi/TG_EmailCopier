@@ -1,0 +1,28 @@
+{
+	"name":"TG_Email_Copier",
+	"version":"0.1",
+	"manifest_version":2,
+		
+   "browser_action": {
+   "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title" : "Email copier"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "/scripts/fontawesome.js", "/scripts/page.js"
+      ]
+    }
+  ],
+  "background":
+  {
+    "scripts":["/scripts/utils.js", "/scripts/common.js", "/scripts/background.js"]
+  }
+}
