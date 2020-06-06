@@ -13,33 +13,31 @@
 </head>
 
 <body>
-  <div class="modal-header">
+  <div class="modal-header" >
  
-    <div class="statistics">
-      <div class="email" title="Emails"><div id="emailsUniqueCount"></div><i class="fa fa-search" aria-hidden="true"></i></div>
-      <div class="email-domain" title="Emails Domains"><div id="emailsDomainsUniqueCount"></div><i class="fa fa-globe" aria-hidden="true"></i></div>
-    </div>
-  </div>
-  <div class="modal-content" id="result">
-    <div class="results">
-    </div>
-  </div>
   <div class="modal-icons">
     <div class="flex-container">
       <div class="flex">
         <div title="Refresh search" id="refrech-result">
-          <i class="fa fa-refresh" aria-hidden="true"></i>
+          <button style="font-size:24px;color:blue">REFRESH<i class="fa fa-refresh" aria-hidden="true"></i></button>
         </div>
       </div>
+	  
       <div class="flex">
         <div title="Copy" id="copy" href="">
-          <i class="fa fa-clipboard" aria-hidden="true"></i>
+		 <button style="font-size:24px;color:GREEN">COPY<i class="fa fa-clipboard" aria-hidden="true"></i></button>
         </div>
       </div>
       
 
       </div>
     </div>
+    <div class="statistics" style="visibility: hidden">
+      <div style="visibility: hidden" class="email" title="Emails"><div id="emailsUniqueCount"></div><i class="fa fa-search" aria-hidden="true"></i></div>
+      <div style="visibility: hidden" class="email-domain" title="Emails Domains"><div id="emailsDomainsUniqueCount"></div><i class="fa fa-globe" aria-hidden="true"></i></div>
+    </div>
+  </div>
+ 
   </div>
 </body>
 
